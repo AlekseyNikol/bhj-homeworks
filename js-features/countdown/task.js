@@ -1,8 +1,8 @@
 const ReverseTimer = function () {
-    const output = document.getElementById("timer");
+    let output = document.getElementById("timer");
     output.textContent -= 1;
     if (output.textContent <= 0) {
-        alert('вы выиграли');
+        alert('Вы победили в конкурсе');
         clearInterval(inervalId);
     }
 }
