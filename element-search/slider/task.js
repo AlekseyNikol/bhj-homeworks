@@ -12,18 +12,30 @@ console.log(arrayItm)
 
 
 function prev() {
-   //let arraySlider = sliderItems.findIndex(e => e == "slider__item_active"); // почему не срабатывает метод findIndex, как показано в учебнике?
-   let arraySlider = arrayItm.findIndex(e => e.classList.contains("slider__item_active")); // зачем проверять наличие CSS класса элемента? без мотода contains возвращает (-1). И почему строка не работает без Array?
+   //let arraySlider = sliderItems.findIndex(e => e == "slider__item_active"); // почему не срабатывает метод findIndex в данном случае?
+   let arraySlider = arrayItm.findIndex(e => e.classList.contains("slider__item_active")); // зачем проверять наличие CSS класса элемента? без мотода contains возвращает (-1). И почему строка не работает без Array (arrayItm), то есть с переменной arrowNext?
    //console.log(arraySlider)
-   arrayItm[arraySlider].classList.remove("slider__item_active")
+   arrayItm[arraySlider].classList.remove("slider__item_active");
    console.log(arrayItm)
    if (arraySlider > 0) {
-      //console.log(88)
       arraySlider -= 1
    } else {
-      //console.log(87)
-      arraySlider = (arrayItm.length - 1);
+      arraySlider = arrayItm.length - 1; //почему в условии(-1), зачем мы из длины массива вычетаем один элемент?
    }
    return arrayItm[arraySlider].classList.add("slider__item_active")
 }
-arrowPrev.addEventListener('click', prev)
+
+function next() {
+   let arraySlider = arrayItm.findIndex(e => e.classList.contains('slider__item_active'));
+   arrayItm[arraySlider].classList.remove('slider__item_active');
+
+   if (arraySlider < arrayItm.length - 1) {
+      arraySlider += 1;
+   } else {
+      arraySlider = 0;
+   }
+   return arrayItm[arraySlider].classList.add("slider__item_active")
+}
+
+arrowPrev.addEventListener('click', prev) // стрелка назад
+arrowNext.addEventListener('click', next) // стрелка вперед
