@@ -7,7 +7,7 @@ const menuSub = document.querySelectorAll('.menu_sub')
 
 //функция меню
 
-MenuItem.forEach((item) => {
+menuItem.forEach((item) => {
    let subMenu = item.querySelector('.menu_sub')
    console.log(subMenu)
    if (subMenu) {
@@ -16,7 +16,7 @@ MenuItem.forEach((item) => {
 
       link.onclick = (e) => {
          e.preventDefault()
-         MenuSub.forEach((sub) => {
+         menuSub.forEach((sub) => {
             console.log(sub)
             if (sub !== subMenu) { // почему? ведь пер subMenu("ul.menu.menu_sub") и элемент объекта MenuSub - это (ul.menu.menu_sub)
                sub.classList.remove('menu_active')
