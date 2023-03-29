@@ -23,10 +23,10 @@ arrayHole.map((el) => {
 
 
 let checkGame = () => {
-   if (killMole >= 10 && lostMole < 5) { // почебу так код не работает (killMole = 10 && lostMole < 5)
+   if (killMole === 10) {
       alert("Победа!");
       end()
-   } else if (lostMole >= 5) { // почебу так код не работает (lostMole = 5)
+   } else if (lostMole === 5) {
       alert("Проиграли!");
       end()
    }
