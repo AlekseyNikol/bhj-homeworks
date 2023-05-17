@@ -29,7 +29,7 @@ for (let i = 0; i < arrayItem.length; i++) {
    arrayItem[i].onclick = function () {
       dropdownValue.textContent = this.textContent;
       removeClick();
-      return false // почему без false не срабатывает выбор
+      return false
    }
 }
 
