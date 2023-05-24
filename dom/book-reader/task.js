@@ -2,7 +2,7 @@
 
 const book = document.getElementById("book");
 //console.log(book);
-const fontSize = document.querySelectorAll(".git font-size");
+const fontSize = document.querySelectorAll(".font-size");
 //console.log(fontSize);
 
 for (let i = 0; i < fontSize.length; i++) {
