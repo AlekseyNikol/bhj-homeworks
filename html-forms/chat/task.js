@@ -1,5 +1,5 @@
 const chatWidgetSideText = document.querySelector('.chat-widget__side-text');
-//console.log(chatWidgetSideText);
+console.log(chatWidgetSideText);
 
 chatWidgetSideText.onclick = function () {
    const chatWidget = document.querySelector('.chat-widget');
