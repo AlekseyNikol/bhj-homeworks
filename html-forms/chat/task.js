@@ -23,7 +23,8 @@ chatWidgetInput.onkeypress = function (e) {
          'Где ваша совесть?',
       ],
          index = Math.floor(Math.random() * messageRobot.length);
-      if (messageCustomer != '') {
+      if (messageCustomer.trim() != '') {
+         console.log(chatWidgetInput.value)
          const messages = document.querySelector('.chat-widget__messages');
          messages.innerHTML += `
                     <div class="message message_client">
