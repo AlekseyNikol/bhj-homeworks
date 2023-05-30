@@ -1,9 +1,9 @@
 let task = document.querySelector(".tasks__list");
-consolelog(task);
+//consolelog(task);
 let taskAdd = document.querySelector(".tasks__add");
-consolelog(taskAdd);
+//consolelog(taskAdd);
 let input = document.querySelector(".tasks__input");
-consolelog(input);
+//consolelog(input);
 
 taskAdd.addEventListener('click', e => {
    e.preventDefault();
