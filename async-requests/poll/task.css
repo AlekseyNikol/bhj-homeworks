@@ -11,10 +11,14 @@ body {
 }
 
 button {
-  font-family: Golos, Arial, sans-serif;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
-  border-radius: 2px;
+  border-radius: 3px;
+  padding: 6px 12px;
   margin: 0 5px 20px 0;
+}
+
+button:hover {
+  color: #fff;
 }
