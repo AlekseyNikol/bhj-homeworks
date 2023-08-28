@@ -77,10 +77,12 @@ input:focus {
 
 button {
   font-family: Golos, Arial, sans-serif;
-  color: #fff;
-  background-color: #06f;
-  border: 1px solid transparent;
-  border-radius: 2px;
+  /*color: #fff;
+  background-color: #06f;*/
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
@@ -100,4 +102,5 @@ button {
 
 button:hover {
   background-color: #005ce6;
+  color: #fff;
 }
