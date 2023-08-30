@@ -8,20 +8,19 @@ console.log(clearBtn);
 
 textarea.value = localStorage.getItem('text');
 
-//console.log(textarea.value);
-console.log(localStorage);
 
 textarea.oninput = () => localStorage.text = textarea.value;
 
-console.log(textarea.value);
-
 clearBtn.addEventListener("click", () => {textarea.value = "";
-    localStorage.text = textarea.value})
+    localStorage.removeItem("text")}) 
+    
 /*
 // one
 
 clearBtn.addEventListener("click", () => {textarea.value = "";
-    localStorage.removeItem("text")}) 
+    localStorage.text = textarea.value})
+
+
 
 // two
 
