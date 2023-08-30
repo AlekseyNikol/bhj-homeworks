@@ -6,9 +6,14 @@ const clearBtn = document.getElementById("btn_clear")
 console.log(textarea);
 console.log(clearBtn);
 
-textarea.value = localStorage.text;
+textarea.value = localStorage.getItem('text');
+
+//console.log(textarea.value);
+console.log(localStorage);
 
 textarea.oninput = () => localStorage.text = textarea.value;
+
+console.log(textarea.value);
 
 clearBtn.addEventListener("click", () => {textarea.value = "";
     localStorage.text = textarea.value})
